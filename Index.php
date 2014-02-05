@@ -1,12 +1,8 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
 <HTML>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <?php include ('connexion.php'); ?>
     <HEAD>
+        <title>Jouets en Bois</title>
         <link href="jouets.css" rel="stylesheet" media="all" type="text/css">
     </HEAD>
     <BODY>
@@ -25,27 +21,29 @@ and open the template in the editor.
             echo "<h1>Bienvenue sur le site des produits Jouets en Bois, aujourd'hui le $jour/$mois/$an </h1>";
             ?>
 
-            <p><h4>Petit site didactique</h4></p>
-        <p><h4> Attention certaines pages ne sont pas fournies car  elles feront l'objet d'un développement ultérieur</h4> </p>
-    <BR><BR>
+            <p>Petit site didactique</p>
+            <p>Attention certaines pages ne sont pas fournies car  elles feront l'objet d'un développement ultérieur</p>
 
-    <p><h2> Gestion des clients</h2> </p>
-<A  href="AfficherTousClients.php">Visualiser toutes les clients</A><BR>
-<BR>
-
-<p><h2> Gestion des catégories</h2> </p>
-<A  href="AfficherToutesCategories.php">Visualiser toutes les catégories</A><BR>
-<A  href="NouvelleCategorie.php">Créer une nouvelle catégorie</A><BR>
-<BR>
-
-<p><h2> Gestion des produits </h2></p>
-<A  href="AfficherTousProduits.php">Visualiser tous les produits - en image</A><BR>
-<A  href="ChoisirUneCategorie.php">Visualiser les produits d'une catégorie</A> <BR>
-<A  href="ChoisirUneCategorieV2.php">Visualiser les produits d'une catégorie V2</A> <BR>
-<A  href="ChoisirUnProduit.php">Visualiser un produit à partir de son N°</A><BR>
-<A  href="NouveauProduit.php">Créer un nouveau produit</A><BR>
-<BR>
-
-</DIV> 
-</BODY>
+            <h2> Gestion des clients</h2>
+            <ul>
+                <li><A  href="AfficherTousClients.php">Visualiser toutes les clients</A></li>
+            </ul>
+            
+            <h2> Gestion des catégories</h2>
+            <ul>
+                <li><A  href="AfficherToutesCategories.php">Visualiser toutes les catégories</A></li>
+                <li><A  href="NouvelleCategorie.php">Créer une nouvelle catégorie</A></li>
+            </ul>
+            
+            <h2> Gestion des produits </h2>
+            <ul>
+                <li><A  href="AfficherTousProduits.php">Visualiser tous les produits - en image</A></li>
+                <li><A  href="ChoisirUneCategorie.php">Visualiser les produits d'une catégorie</A></li>
+                <li><A  href="ChoisirUneCategorieV2.php">Visualiser les produits d'une catégorie V2</A></li>
+                <li><A  href="ChoisirUnProduit.php">Visualiser un produit à partir de son N°</A></li>
+                <li><A  href="NouveauProduit.php">Créer un nouveau produit</A></li>
+            </ul>
+            
+        </DIV> 
+    </BODY>
 </HTML>

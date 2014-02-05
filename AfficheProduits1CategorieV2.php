@@ -4,10 +4,9 @@
         <!--pour gérer les problèmes d’accents-->
         <link href="jouets.css" rel="stylesheet" media="all" type="text/css"/>
     </head>
-
     <body>
 
-        <p><H1>Liste des produits de la catégorie choisie</H1><BR>
+        <H3>Liste des produits de la catégorie choisie</H3>
         <!-- Cette page fait suite à la page ChoisirUneCategorieV2-->
         <!-- elle récupère en méthode Get le champ IdCat de l'URL choisie-->
         <!-- elle affiche tous les produits correspondant à ce numéro catégorie -->
@@ -26,18 +25,21 @@
             echo "<H2>vous avez choisi la catégorie $Choix</H2>";
             //Récupération des produits correspondants à $Choix
             $listeProduits = $connexion->query("SELECT * FROM produit where id_cat = $Choix");
-            echo'<table><tr><th classe="id">identifiant</th><th classe="des">Libelle</th></tr>';
+
+            echo '<table border = 1 width = 700>';
+            echo '<tr><th>identifiant</th><th>Libellé</th><th>Photo</th></tr>';
             foreach ($listeProduits as $produit) {
                 echo '<tr>';
                 echo '<td>' . $produit["id_prod"] . '</td>';
                 echo '<td>' . $produit["lib_prod"] . '</td>';
                 $chemin = "ImagesProduits/" . $produit["photo_prod"];
-                echo "<td><img src= $chemin width='100' height='75'></td>";
+                echo "<th><img src= $chemin width='100' height='75'></th>";
                 echo '</tr>';
             }
             echo '</table>';
         }
         ?>
-        <p><H3> <A  href="Index.php">Retour Page d'accueil</A></H3></p>
-</body>
+        <H3><A  href="ChoisirUneCategorieV2.php">Retour à la prévisualisation de toutes les catégories</A></H3>
+        <H3><A  href="Index.php">Retour Page d'accueil</A></H3>
+    </body>
 </HTML>

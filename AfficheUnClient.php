@@ -58,7 +58,7 @@
             echo '</table>';
         }
         ?>
-        <p><H3> <A  href="AfficherTousClients.php">Retour à la prévisualisation de tous les clients</A></H3></p>
-    <p><H3> <A  href="Index.php">Retour Page d'accueil</A></H3></p>
-</body>
+        <H3><A  href="AfficherTousClients.php">Retour à la prévisualisation de tous les clients</A></H3>
+        <H3><A  href="Index.php">Retour Page d'accueil</A></H3>
+    </body>
 </HTML>
